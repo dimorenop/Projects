@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>     Cuanto pesas?  </title>
+  <style>
+    body{background-color : black;
+      color: white;
+    font-family: Helvetica;}
+
+    strong{
+      background-color: #0DD0DD;
+    }
+    strong1{
+      background-color: #0F0FFD;
+    }
+    strong2{
+      background-color: #D000ED;
+    }
+
+    </style>
+  </head>
+
+  <body>
+
+    <h1> Tu peso en otro planeta </h1>
+    <script>
+
+      var peso = prompt("cuanto pesas?");
+      var PesoTierra = parseFloat(peso);
+      var planeta1 = "la tierra";
+      PesoTierra = PesoTierra.toFixed(2);
+
+      var PesoMarte= (PesoTierra*3.7)/9.8;
+      PesoMarte = PesoMarte.toFixed(2);
+
+      var PesoJupiter = (PesoTierra*24.8)/9.8;
+      PesoJupiter = PesoJupiter.toFixed(2);
+
+
+      document.write("Tu peso en la "+ planeta1+" es: <strong>"+ PesoTierra +"</strong> kg<br>");
+      document.write("Tu peso en marte es: <strong1>"+ PesoMarte +"</strong1> kg<br>");
+      document.write("Tu peso en jupiter es: <strong2>"+ PesoJupiter +"</strong2> kg");
+
+    </script>
+
+
+  </body>
+  </html>
